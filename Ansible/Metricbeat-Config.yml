@@ -1,0 +1,17 @@
+Changes made to metricbeat-config..
+
+Under KIBANA banner..
+setup.kibana:
+  host: "10.1.0.4:5601"
+
+Under ELASTICSEARCH OUTPUT banner..
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["10.1.0.4:9200"]
+  username: "elastic"
+  password: "changeme"
+
+Under PROCESSORS banner..
+processors:
+  - add_host_metadata: ~
+  - add_cloud_metadata: ~

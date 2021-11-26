@@ -1,0 +1,10 @@
+Changes made to Filebeat-Config.yml file..
+
+Line #1106
+ hosts: ["10.1.0.4:9200"]
+  username: "elastic"
+  password: "changeme"
+
+Line #1806
+setup.kibana:
+  host: "10.1.0.4:5601"
